@@ -54,7 +54,7 @@ console.log(result);
 // }
 ```
 
-Создание проекции каждого элемента массива.
+Создание проекции элементов массива.
 
 ```js
 import {projectData} from '@e22m4u/js-data-projector';
