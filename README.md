@@ -43,7 +43,7 @@ npm install @e22m4u/js-data-projector
 
 Сигнатура:
 
-- `projectData(schemaOrName, data, [options])`
+- `projectData(schemaOrName, data, [options])` - возвращает проекцию;
   - `schemaOrName: string | object` - схема проекции или имя;
   - `data: object | object[]` - проектируемые данные;
   - `options?: object` - объект настроек;
