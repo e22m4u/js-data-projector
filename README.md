@@ -178,7 +178,7 @@ console.log(outputData);
 
 ### Класс `DataProjector`
 
-Применение схемы проекции с помощью класса-сервиса.
+Создание проекции с помощью схемы.
 
 ```js
 import {DataProjector} from '@e22m4u/js-data-projector';
