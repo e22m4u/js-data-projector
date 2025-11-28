@@ -191,9 +191,9 @@ const schema = {
 }
 
 const data = {
-  name: 'Fedor',
-  password: 'pass123', // будет скрыто
-  extra: 10
+  name: 'Fedor',       // будет доступно, явное правило
+  password: 'pass123', // будет исключено, явное правило
+  extra: 10            // будет доступно в режиме по умолчанию
 }
 
 const result = projector.project(schema, data);
@@ -201,6 +201,33 @@ console.log(result);
 // {
 //   name: 'Fedor',
 //   extra: 10
+// }
+```
+
+Создание проекции в строгом режиме.
+
+```js
+import {DataProjector} from '@e22m4u/js-data-projector';
+
+const projector = new DataProjector();
+
+const schema = {
+  name: true,
+  password: false,
+}
+
+const data = {
+  name: 'Fedor',       // будет доступно, явное правило
+  password: 'pass123', // будет исключено, явное правило
+  extra: 10            // будет исключено в строгом режиме
+}
+
+const result = projector.project(schema, data, {
+  strict: true, // <= строгий режим
+});
+console.log(result);
+// {
+//   name: 'Fedor'
 // }
 ```
 
