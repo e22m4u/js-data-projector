@@ -6,11 +6,6 @@
     "moduleResolution": "NodeNext",
     "allowJs": true,
     "checkJs": true,
-
-    "strict": false,
-    "noImplicitAny": false,
-    "skipLibCheck": false,
-    "strictNullChecks": true,
   },
   "include": [
     "./src/**/*.ts",
