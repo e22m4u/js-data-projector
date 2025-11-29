@@ -1,9 +1,23 @@
 {
   "compilerOptions": {
-    "rootDir": "src",
     "noEmit": true,
     "target": "es2022",
     "module": "NodeNext",
-    "moduleResolution": "NodeNext"
-  }
+    "moduleResolution": "NodeNext",
+    "allowJs": true,
+    "checkJs": true,
+
+    "strict": false,
+    "noImplicitAny": false,
+    "skipLibCheck": false,
+    "strictNullChecks": true,
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

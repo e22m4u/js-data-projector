@@ -18,7 +18,7 @@ export function validateProjectionSchema(schema, shallowMode = false) {
   // shallowMode
   if (typeof shallowMode !== 'boolean') {
     throw new InvalidArgumentError(
-      'The parameter "shallowMode" should be a Boolean, but %v was given.',
+      'Parameter "shallowMode" must be a Boolean, but %v was given.',
       shallowMode,
     );
   }

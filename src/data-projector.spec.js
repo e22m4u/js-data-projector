@@ -142,6 +142,7 @@ describe('DataProjector', function () {
 
     it('should throw an error when the resolver option is provided', function () {
       const S = new DataProjector();
+      // @ts-ignore
       const throwable = v => () => S.project({}, {}, {resolver: v});
       const error = 'Option "resolver" is not supported for the DataProjector.';
       expect(throwable('str')).to.throw(error);
@@ -158,6 +159,7 @@ describe('DataProjector', function () {
 
     it('should validate the given schema object', function () {
       const S = new DataProjector();
+      // @ts-ignore
       const throwable = () => S.project({foo: 10}, {foo: 'bar'});
       expect(throwable).to.throw(
         'Property options must be a Boolean or an Object, but 10 was given.',

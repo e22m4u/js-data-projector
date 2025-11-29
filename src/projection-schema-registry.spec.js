@@ -51,7 +51,7 @@ describe('ProjectionSchemaRegistry', function () {
       const S = new ProjectionSchemaRegistry();
       const schema = {foo: true, bar: false};
       S.defineSchema('mySchema', schema);
-      expect(S._schemas.get('mySchema')).to.be.eql(schema);
+      expect(S['_schemas'].get('mySchema')).to.be.eql(schema);
     });
 
     it('should return this', function () {

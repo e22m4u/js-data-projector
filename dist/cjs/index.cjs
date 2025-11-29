@@ -42,7 +42,7 @@ function validateProjectionSchema(schema, shallowMode = false) {
   }
   if (typeof shallowMode !== "boolean") {
     throw new import_js_format.InvalidArgumentError(
-      'The parameter "shallowMode" should be a Boolean, but %v was given.',
+      'Parameter "shallowMode" must be a Boolean, but %v was given.',
       shallowMode
     );
   }
